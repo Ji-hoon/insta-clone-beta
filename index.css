@@ -256,7 +256,7 @@
     overflow: hidden;
   }
   .main__posts:not(.not-posts) img {
-    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
   /* 이미지 처리 */
@@ -266,7 +266,10 @@
   }
   .post__container img {
     max-width: 60%;
-    object-fit: cover;
+    object-fit: contain;
+    display: flex;
+    flex-grow: 1;
+    min-width: 60%;;
   }
 
   .main__posts a:hover {
@@ -618,7 +621,7 @@
   /* 다음 코드부터 추가 및 수정 되었습니다. */
   
   .post__view > .post__container > div {
-    width: 300px;
+    /* width: 300px; */
     padding: 25px;
   
     word-wrap: break-word;
@@ -629,7 +632,7 @@
     position: relative;
     display: flex;
     flex-direction: column; 
-    flex-basis: auto;
+    flex-basis: 100%;
   }
   .post__view > .post__container > .post__content p {
     flex-grow: 1;
