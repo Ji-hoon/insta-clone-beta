@@ -262,7 +262,7 @@
   }
   
   .main__posts a {
-    width: calc(825px / 3);
+    width: calc(100% / 3 - 16px);
     height: 273px;
     margin: 0 20px 20px 0;
   
