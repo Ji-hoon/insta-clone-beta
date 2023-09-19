@@ -27,7 +27,7 @@
   .header:after {
     content: '';
     position: fixed;
-    top: 0;
+    top: 60px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -465,7 +465,8 @@
     width: 650px;
     height: 750px;
     /* margin-top: 50px; */
-    max-height: 75vh;
+    max-height: 80vh;
+    flex-grow: 1;
   
     display: flex;
     flex-direction: column;
@@ -517,6 +518,8 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    position: absolute;
+    top: 0;
   }
   
   .modal__layout > .modal__close > img {
