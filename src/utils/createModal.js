@@ -11,7 +11,7 @@ export function createModal() {
   modalEl.innerHTML = modalTemplate();
   document.querySelector("body").prepend(modalEl);
 
-  const modalCloseEl = document.querySelector(".modal__close");
+  const modalCloseEl = document.querySelector(".modal__close img");
 
   modalCloseEl.addEventListener("click", function () {
     document.querySelector("body").removeChild(modalEl);

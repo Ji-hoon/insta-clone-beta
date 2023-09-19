@@ -149,7 +149,13 @@ import {
     } 
   }
 
+  document.querySelector('.header__search input').addEventListener('click', (e) => {
+      document.querySelector('body').classList.add('search');
+  });
 
+  document.querySelector('.header__search input').addEventListener('focusout', (e) => {
+      document.querySelector('body').classList.remove('search');
+  });
 
 
 // 아래는 사용하지 않는 라우팅 샘플 코드

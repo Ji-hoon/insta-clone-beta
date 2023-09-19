@@ -5,7 +5,7 @@
     border-bottom: 1px solid #dbdbdb;
     top: 0;
     background-color: #FFF;
-    z-index: 1;
+    z-index: 13;
     position: sticky;
   }
   
@@ -19,6 +19,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    z-index: 12;
+    position: relative;
+    background-color: #FFF;
+  }
+  .header:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    pointer-events: none;
+    transition: background-color 200ms cubic-bezier(0.25, 0.88, 0.58, 1);
+  }
+  body.search .header:after {
+    content: '';
+    position: fixed;
+    pointer-events: inherit;
+    background-color: rgba(255, 255, 255, 65%);
+    background-color: rgb(0 0 0 / 19%);
   }
   
   .header__logo {
@@ -293,6 +315,7 @@
   .main__posts.not-posts  .spinner {
     display: none;
   }
+
   /* loading */
   .spinner {
     min-height: 275px;
@@ -441,7 +464,8 @@
   .modal__layout > .modal__card {
     width: 650px;
     height: 750px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    max-height: 75vh;
   
     display: flex;
     flex-direction: column;
@@ -453,7 +477,8 @@
   
   .modal__layout > .modal__card > .modal__header {
     width: 100%;
-    height: 42px;
+    /* height: 42px; */
+    padding: 8px 8px 8px 0;
     box-sizing: border-box;
   
     display: flex;
