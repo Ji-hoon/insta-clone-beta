@@ -120,7 +120,6 @@ import {
             }
           });
           
-          // 삭제 버튼에 이벤드를 등록하세요.
           deleteBtn.addEventListener('click', function() {
               const confirm = window.confirm('포스트를 삭제할까요?', '');
               if(confirm) {

@@ -87,7 +87,7 @@ export function createIndexedDB(databaseName, version, objectStore, cb) {
   }
   
   export function deleteIndexedDB(databaseName, version, objectStore, id, cb) {
-    // deleteIndexedDB 함수를 완성해주세요.
+
     if (window.indexedDB) {
       const request = indexedDB.open(databaseName, version);
       const key = Number(id);
@@ -105,7 +105,7 @@ export function createIndexedDB(databaseName, version, objectStore, cb) {
   }
   
   export function getAllKeysIndexedDB(databaseName, version, objectStore, cb) {
-    // getAllKeysIndexedDB 함수를 완성해주세요.
+
     if (window.indexedDB) {
       const request = indexedDB.open(databaseName, version);
   

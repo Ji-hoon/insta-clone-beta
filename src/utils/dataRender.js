@@ -1,4 +1,3 @@
-// getAllKeysIndexedDB를 활용하는 코드가 일부 작성되어 있습니다.
 import { getAllKeysIndexedDB } from '../indexedDB/indexedDB.js';
 import { route } from '../../main.js';
 import { postView} from '../template/postView.js'
